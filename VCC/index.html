@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Voice Controlled Car </title>
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="vcc_styles.css">
+  <!--  <link rel="favicon" href="css/my_website_favicon.ico">  -->
+  <link rel="shortcut icon" href="car.ico">
+</head>
+<!--
+Features to be added:-
+Web Bluetooth
+Different colors for each box in css grid.
+
+hovering on About this project
+hovering +spanning on mic of speech recog. button
+-->
+
+<body class="screen">
+  <div class="grid-container">
+
+    <div class="div1" style="color:Tomato">
+      <strong>
+          Voice Controlled Car
+       </strong>
+    </div>
+
+    <div class="div2" style="background-color:#F5C6A5;color:#7900FF">
+      <a href="about_project.html" target="_blank" class="hover_">
+        About Project
+      </a>
+    </div>
+
+    <div class="div3">Block-3</div>
+
+    <div class="div4" style="background-color:#C1FFD7;color:#064635">
+
+      <div class="input-single">
+          <textarea id="note-textarea" placeholder="Speech-to-text Recognition" rows="6"></textarea>
+      </div>
+      <button id="start-record-btn" title="Start Recording" >Start Recognition</button>
+      <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+      <button id="save-note-btn" title="Save Note">Clear</button>
+
+
+<!--      <button type="button" name="button" onclick="alert('Give Command by Voice')">
+        <img src="mic3.png" alt="mic" width="50" height="50" style="text-align:left;">
+      </button>
+      <form class="" action="index.html" method="post">
+        <label for="">Command</label>
+        <input type="text" name="Command" value="">
+        <br>
+      </form>
+      <!--Speech Recognition-->
+
+    </div>
+
+    <div class="space">
+      this space need to be made transparent
+    </div>
+
+    <div class="div5">
+      <strong>
+        <h7 style="background-color:#9AD0EC;color:blue;">
+          Directions
+        </h7>
+      </strong>
+      <ul class="list" style="color:#FF008E;text-align:left;">
+        <li>Forward</li>
+        <li>Backward</li>
+        <li>Right</li>
+        <li>Left</li>
+      </ul>
+    </div>
+
+    <div class="div6">
+      <strong>
+        <h7 style="background-color:#9AD0EC;color:blue;">
+          Speed
+        </h7>
+      </strong>
+      <ul style="color:#DF711B;text-align:left;">
+        <li>Fast</li>
+        <li>Slow</li>
+        <li>Stop</li>
+      </ul>
+    </div>
+
+    <div class="div7">
+      <button type="button" onclick="alert('Connect via Bluetooth')">Bluetooth</button>
+    </div>
+
+    <div class="div8">
+      Block-8
+    </div>
+  </div>
+<!--
+cdn:-
+A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide
+fast delivery of Internet content. A CDN allows for the quick transfer of assets needed for loading Internet content
+including HTML pages, javascript files, stylesheets, images, and videos.
+
+jquery cdn:-
+jQuery CDN is a method to include jQuery into a website without actually downloading and keeping it in the website's
+folder.
+
+Advantage of hosting a jQuery using a CDN?
+Advantage is that If there is any update in Jquery cdn file you do not have to change anything automatically updated
+code came at your end.
+-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--jquery cdn -->
+  <script src="script.js"></script>
+</body>
+</html>

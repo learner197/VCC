@@ -1,0 +1,86 @@
+.space{
+  grid-area:space;
+  opacity:0;
+  /*height: 1px;*/
+}
+.div1{
+  grid-area: div1;
+}
+
+.div2{
+  grid-area: div2;
+}
+
+.hover_:hover{
+  background-color: yellow;
+  font-size: 40px;
+}
+
+.div3 {
+  grid-area: div3;
+  opacity:0;
+}
+
+.div4 {
+  grid-area: div4;
+  text-align:left;
+  
+}
+
+.div5 :hover{
+  grid-area: div5;
+  align-self: center;
+  font-size: 40px;
+}
+
+.div6:hover {
+  grid-area: div6;
+  font-size: 40px
+
+}
+
+.start-record-btn{
+  font-size: 16px;
+}
+
+.div7 {
+  grid-area: div7;
+  opacity: 1;          /* Make this to 1, if u want bluetooth tab to be displayed */
+}
+
+.div8 {
+  grid-area: div8;
+  opacity:0;
+}
+
+ul.list {
+  list-style-type: circle;
+}
+
+.screen {
+  background-image: url("background_1.jpg");
+  /*background-color: lightblue;*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'div1 div1 div1 div1 div1 div1'
+    'div2 div3 div3 div4 div4 div4'
+    'space space space space space space'
+    'div5 div6 div8 div8 div8 div7';
+  grid-gap: 20px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+
+.grid-container>div {
+  /*IMPORTANT
+  To remove all the white stuff on website
+  comment out below line*/
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
